@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>CarSpawn.png</file>
-        <file>RoadEnd.png</file>
-    </qresource>
-</RCC>
