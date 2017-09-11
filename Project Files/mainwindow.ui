@@ -15,26 +15,29 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="3">
-     <widget class="QPushButton" name="DeleteCourse">
+    <item row="3" column="4">
+     <widget class="QPushButton" name="AddSection">
       <property name="text">
-       <string>Delete Course</string>
+       <string>Add Section</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QPushButton" name="AddCourseButton">
+    <item row="1" column="0" rowspan="3">
+     <widget class="QLineEdit" name="AddCourseLine"/>
+    </item>
+    <item row="5" column="4">
+     <widget class="QPushButton" name="Done">
       <property name="text">
-       <string>Add Course</string>
+       <string>Done</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0" colspan="7">
+    <item row="0" column="0" colspan="5">
      <widget class="QSplitter" name="splitter_5">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
-      <widget class="QWidget" name="layoutWidget">
+      <widget class="QWidget" name="">
        <layout class="QGridLayout" name="ScheduleLayout">
         <item row="1" column="4">
          <widget class="Hour" name="ThursdayNine">
@@ -1186,51 +1189,147 @@
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <widget class="QListWidget" name="List1">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="ListName1">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Empty</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="List1">
+            <property name="accessibleDescription">
+             <string>empty</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-        <widget class="QListWidget" name="List2">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="ListName2">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Empty</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="List2">
+            <property name="accessibleDescription">
+             <string>empty</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </widget>
        <widget class="QSplitter" name="splitter_2">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <widget class="QListWidget" name="List3">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="ListName3">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Empty</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="List3">
+            <property name="accessibleDescription">
+             <string>empty</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-        <widget class="QListWidget" name="List4">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="ListName4">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Empty</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="List4">
+            <property name="accessibleDescription">
+             <string>empty</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </widget>
        <widget class="QSplitter" name="splitter_3">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <widget class="QListWidget" name="List5">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="ListName5">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Empty</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="List5">
+            <property name="accessibleDescription">
+             <string>empty</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-        <widget class="QListWidget" name="List6">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="ListName6">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>Empty</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="List6">
+            <property name="accessibleDescription">
+             <string>empty</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </widget>
       </widget>
      </widget>
     </item>
-    <item row="1" column="2">
+    <item row="3" column="2">
      <widget class="QComboBox" name="SelectCourse">
       <property name="editable">
        <bool>false</bool>
@@ -1240,20 +1339,17 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="6">
-     <widget class="QPushButton" name="AddSection">
+    <item row="3" column="1">
+     <widget class="QPushButton" name="AddCourseButton">
       <property name="text">
-       <string>Add Section</string>
+       <string>Add Course</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QLineEdit" name="AddCourseLine"/>
-    </item>
-    <item row="3" column="6">
-     <widget class="QPushButton" name="Done">
+    <item row="3" column="3">
+     <widget class="QPushButton" name="DeleteCourse">
       <property name="text">
-       <string>Done</string>
+       <string>Delete Course</string>
       </property>
      </widget>
     </item>

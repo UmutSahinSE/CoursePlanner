@@ -20,6 +20,7 @@ public:
     long int HoursWillIncluded[5];
     long int values[8]={2,3,5,7,11,13,17,19};
     QList<Hour*> Hours;
+    QList<QLabel*> ListLabels;
     QList<QListWidget*> Lists;
     QVector<long int> ResultValues;
     long int valuesOnLists[6][500][5];

@@ -16,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     }
     Hours <<ui->MondayNine<<ui->MondayTen<<ui->MondayEleven<<ui->MondayTwelve<<ui->MondayThirteen<<ui->MondayFourteen<<ui->MondayFifteen<<ui->MondaySixteen<<ui->TuesdayNine<<ui->TuesdayTen<<ui->TuesdayEleven<<ui->TuesdayTwelve<<ui->TuesdayThirteen<<ui->TuesdayFourteen<<ui->TuesdayFifteen<<ui->TuesdaySixteen<<ui->WednesdayNine<<ui->WednesdayTen<<ui->WednesdayEleven<<ui->WednesdayTwelve<<ui->WednesdayThirteen<<ui->WednesdayFourteen<<ui->WednesdayFifteen<<ui->WednesdaySixteen<<ui->ThursdayNine<<ui->ThursdayTen<<ui->ThursdayEleven<<ui->ThursdayTwelve<<ui->ThursdayThirteen<<ui->ThursdayFourteen<<ui->ThursdayFifteen<<ui->ThursdaySixteen<<ui->FridayNine<<ui->FridayTen<<ui->FridayEleven<<ui->FridayTwelve<<ui->FridayThirteen<<ui->FridayFourteen<<ui->FridayFifteen<<ui->FridaySixteen;
     Lists <<ui->List1<<ui->List2<<ui->List3<<ui->List4<<ui->List5<<ui->List6;
+    ListLabels<<ui->ListName1<<ui->ListName2<<ui->ListName3<<ui->ListName4<<ui->ListName5<<ui->ListName6;
     resize(1200,800);
     ConnectMouseEvents();
     InitializeValues();
@@ -94,17 +95,23 @@ bool MainWindow::HasSameHour(long int value1, long int value2)
 
 void MainWindow::AddOrDiscardHour(Hour *Referance)
 {
+    QPixmap Red(":/RoadEnd.png");
+    QPixmap Green(":/CarSpawn.png");
+    SetAllRed();
+    for(int counter=0;counter<40;counter++)
+    {
+        if(Hours[counter]->Selected)
+            Hours[counter]->setPixmap(Green);
+    }
     if(!Referance->Selected)
     {
-        Referance->Selected=true;
-        QPixmap Green(":/CarSpawn.png");
+        Referance->Selected=true;      
         Referance->setPixmap(Green);
         HoursWillIncluded[Referance->day]*=Referance->Value;
     }
     else
     {
-        Referance->Selected=false;
-        QPixmap Red(":/RoadEnd.png");
+        Referance->Selected=false;    
         Referance->setPixmap(Red);
         HoursWillIncluded[Referance->day]/=Referance->Value;
     }
@@ -113,6 +120,8 @@ void MainWindow::AddOrDiscardHour(Hour *Referance)
 void MainWindow::Highlight(QListWidgetItem *chosen)
 {
     QPixmap Green(":/CarSpawn.png");
+    SetAllRed();
+    SetAllUnselected();
     int list;
     if(chosen->listWidget()->objectName()=="List1") list=0;
     else if(chosen->listWidget()->objectName()=="List2") list=1;
@@ -124,22 +133,24 @@ void MainWindow::Highlight(QListWidgetItem *chosen)
     {
         for(int counter2=0;counter2<8;counter2++)
         {
-           if(valuesOnLists[list][chosen->listWidget()->currentRow()-1][counter]%values[counter2]==0)
+           if(valuesOnLists[list][chosen->listWidget()->currentRow()][counter]%values[counter2]==0)
            {
                Hours[counter*8+counter2]->setPixmap(Green);
            }
         }
     }
-    QThread *myThread= new QThread;
-    DelayedConvertToRed *DCTW=new DelayedConvertToRed(Hours);
-    connect(myThread,SIGNAL(started()),DCTW,SLOT(StartT()));
-    DCTW->moveToThread(myThread);
-    myThread->start();
+//    QThread *myThread= new QThread;
+//    DelayedConvertToRed *DCTW=new DelayedConvertToRed(Hours);
+//    connect(myThread,SIGNAL(started()),DCTW,SLOT(StartT()));
+//    DCTW->moveToThread(myThread);
+//    myThread->start();
 }
 
 void MainWindow::HighlightResults(QListWidgetItem *chosen)
 {
     QPixmap Green(":/CarSpawn.png");
+    SetAllRed();
+    SetAllUnselected();
     for(int counter=0;counter<8;counter++)
     {
        for(int counter2=0;counter2<5;counter2++)
@@ -150,11 +161,11 @@ void MainWindow::HighlightResults(QListWidgetItem *chosen)
            }
        }
     }
-    QThread *myThread= new QThread;
-    DelayedConvertToRed *DCTW=new DelayedConvertToRed(Hours);
-    connect(myThread,SIGNAL(started()),DCTW,SLOT(StartT()));
-    DCTW->moveToThread(myThread);
-    myThread->start();
+//    QThread *myThread= new QThread;
+//    DelayedConvertToRed *DCTW=new DelayedConvertToRed(Hours);
+//    connect(myThread,SIGNAL(started()),DCTW,SLOT(StartT()));
+//    DCTW->moveToThread(myThread);
+//    myThread->start();
 }
 
 void MainWindow::on_AddCourseButton_clicked()
@@ -169,15 +180,11 @@ void MainWindow::on_AddCourseButton_clicked()
         return;
     }
     ui->SelectCourse->addItem(ui->AddCourseLine->text());
-    ui->SelectCourse->setCurrentIndex(ui->SelectCourse->count()-1);
-    QListWidgetItem *newCourse= new QListWidgetItem;
-    newCourse->setText(ui->AddCourseLine->text());
-    newCourse->setTextColor(Qt::red);
     for(int counter=0;counter<6;counter++)
     {
         if(Lists[counter]->accessibleDescription()=="empty")
         {
-            Lists[counter]->addItem(newCourse);
+            ListLabels[counter]->setText(ui->AddCourseLine->text());
             Lists[counter]->setAccessibleDescription(ui->AddCourseLine->text());
             break;
         }
@@ -196,7 +203,8 @@ void MainWindow::on_DeleteCourse_clicked()
                 valuesOnListsSize[counter]=0;
                 Lists[counter]->clear();
                 Lists[counter]->setAccessibleDescription("empty");
-                break;
+                ListLabels[counter]->setText("Empty");
+                break;             
             }
         }
         ui->SelectCourse->removeItem(ui->SelectCourse->currentIndex());
@@ -238,7 +246,7 @@ void MainWindow::on_AddSection_clicked()
             }
             valuesOnListsSize[counter]++;
             Lists[counter]->addItem(newSection);
-            newSection->setText("Section "+QString::number(Lists[counter]->count()-1));       
+            newSection->setText("Section "+QString::number(Lists[counter]->count()));
             break;
         }
     }
@@ -256,7 +264,7 @@ void MainWindow::on_Done_clicked()
     int countViableLists=0,counter,counter2,counter3;
     for(int counter=0;counter<6;counter++)
     {
-        if(Lists[counter]->count()>1) countViableLists++;
+        if(Lists[counter]->count()>0) countViableLists++;
     }
     if(countViableLists<2)
     {
@@ -266,7 +274,7 @@ void MainWindow::on_Done_clicked()
     countViableLists=0;
     for(counter=0;counter<6;counter++)
     {
-        if(Lists[counter]->count()>1) //if list is not empty
+        if(Lists[counter]->count()>0) //if list is not empty
         {
             if(countViableLists==1)
             {
@@ -336,14 +344,20 @@ void MainWindow::on_Done_clicked()
             }
         }
     }
-    QListWidget *results=new QListWidget;
-    ui->splitter_4->addWidget(results);
+    QListWidget *results=new QListWidget;   
     delete ui->List1;
     delete ui->List2;
     delete ui->List3;
     delete ui->List4;
     delete ui->List5;
     delete ui->List6;
+    delete ui->ListName1;
+    delete ui->ListName2;
+    delete ui->ListName3;
+    delete ui->ListName4;
+    delete ui->ListName5;
+    delete ui->ListName6;
+    ui->splitter_4->addWidget(results);
     DisconnectMouseEvents();
     finalList=list1;
     for(counter=0;counter<valuesOnListsSize[list1];counter++)
