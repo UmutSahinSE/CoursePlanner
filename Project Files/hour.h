@@ -11,7 +11,8 @@ class Hour : public QLabel
     Q_OBJECT
 public:
     explicit Hour(QWidget *parent = 0);
-    int Value;
+    long int Value;
+    int day;
     bool Selected;
     void mousePressEvent(QMouseEvent *ev);
 signals:

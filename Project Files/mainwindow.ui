@@ -7,57 +7,28 @@
     <x>0</x>
     <y>0</y>
     <width>711</width>
-    <height>434</height>
+    <height>479</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="3">
-     <widget class="QPushButton" name="DeleteCourse">
-      <property name="text">
-       <string>Delete Course</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QPushButton" name="AddCourseButton">
-      <property name="text">
-       <string>Add Course</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0" colspan="7">
-     <widget class="QSplitter" name="splitter_5">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
-       <layout class="QGridLayout" name="ScheduleLayout">
-        <item row="1" column="4">
-         <widget class="Hour" name="ThursdayNine">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QGridLayout" name="scheduleLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
           <property name="frameShape">
-           <enum>QFrame::Box</enum>
+           <enum>QFrame::NoFrame</enum>
           </property>
           <property name="text">
            <string/>
           </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>97</number>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -88,16 +59,6 @@
           </property>
           <property name="text">
            <string>Wednesday</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_6">
-          <property name="frameShape">
-           <enum>QFrame::NoFrame</enum>
-          </property>
-          <property name="text">
-           <string/>
           </property>
          </widget>
         </item>
@@ -206,6 +167,31 @@
           </property>
          </widget>
         </item>
+        <item row="1" column="4">
+         <widget class="Hour" name="ThursdayNine">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>97</number>
+          </property>
+         </widget>
+        </item>
         <item row="1" column="5">
          <widget class="Hour" name="FridayNine">
           <property name="mouseTracking">
@@ -266,6 +252,31 @@
           </property>
          </widget>
         </item>
+        <item row="2" column="2">
+         <widget class="Hour" name="TuesdayTen">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>29</number>
+          </property>
+         </widget>
+        </item>
         <item row="2" column="3">
          <widget class="Hour" name="WednesdayTen">
           <property name="mouseTracking">
@@ -288,6 +299,31 @@
           </property>
           <property name="Value" stdset="0">
            <number>61</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="Hour" name="ThursdayTen">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>101</number>
           </property>
          </widget>
         </item>
@@ -326,31 +362,6 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="4">
-         <widget class="Hour" name="ThursdayTen">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>101</number>
-          </property>
-         </widget>
-        </item>
         <item row="3" column="1">
          <widget class="Hour" name="MondayEleven">
           <property name="mouseTracking">
@@ -373,31 +384,6 @@
           </property>
           <property name="Value" stdset="0">
            <number>5</number>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="4">
-         <widget class="Hour" name="ThursdayEleven">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>103</number>
           </property>
          </widget>
         </item>
@@ -426,31 +412,6 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="5">
-         <widget class="Hour" name="FridayEleven">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>149</number>
-          </property>
-         </widget>
-        </item>
         <item row="3" column="3">
          <widget class="Hour" name="WednesdayEleven">
           <property name="mouseTracking">
@@ -476,6 +437,66 @@
           </property>
          </widget>
         </item>
+        <item row="3" column="4">
+         <widget class="Hour" name="ThursdayEleven">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>103</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="Hour" name="FridayEleven">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>149</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="Twelve">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>12:00</string>
+          </property>
+         </widget>
+        </item>
         <item row="4" column="1">
          <widget class="Hour" name="MondayTwelve">
           <property name="mouseTracking">
@@ -498,16 +519,6 @@
           </property>
           <property name="Value" stdset="0">
            <number>7</number>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QLabel" name="Twelve">
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string>12:00</string>
           </property>
          </widget>
         </item>
@@ -558,6 +569,31 @@
           </property>
           <property name="Value" stdset="0">
            <number>71</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="Hour" name="ThursdayTwelve">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>107</number>
           </property>
          </widget>
         </item>
@@ -621,31 +657,6 @@
           </property>
          </widget>
         </item>
-        <item row="4" column="4">
-         <widget class="Hour" name="ThursdayTwelve">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>107</number>
-          </property>
-         </widget>
-        </item>
         <item row="5" column="2">
          <widget class="Hour" name="TuesdayThirteen">
           <property name="mouseTracking">
@@ -668,6 +679,31 @@
           </property>
           <property name="Value" stdset="0">
            <number>41</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="Hour" name="WednesdayThirteen">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>73</number>
           </property>
          </widget>
         </item>
@@ -718,31 +754,6 @@
           </property>
           <property name="Value" stdset="0">
            <number>157</number>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="3">
-         <widget class="Hour" name="WednesdayThirteen">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>73</number>
           </property>
          </widget>
         </item>
@@ -831,6 +842,31 @@
           </property>
          </widget>
         </item>
+        <item row="6" column="4">
+         <widget class="Hour" name="ThursdayFourteen">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>113</number>
+          </property>
+         </widget>
+        </item>
         <item row="6" column="5">
          <widget class="Hour" name="FridayFourteen">
           <property name="mouseTracking">
@@ -866,31 +902,6 @@
           </property>
          </widget>
         </item>
-        <item row="6" column="4">
-         <widget class="Hour" name="ThursdayFourteen">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>113</number>
-          </property>
-         </widget>
-        </item>
         <item row="7" column="1">
          <widget class="Hour" name="MondayFifteen">
           <property name="mouseTracking">
@@ -913,31 +924,6 @@
           </property>
           <property name="Value" stdset="0">
            <number>17</number>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="4">
-         <widget class="Hour" name="ThursdayFifteen">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>127</number>
           </property>
          </widget>
         </item>
@@ -966,6 +952,56 @@
           </property>
          </widget>
         </item>
+        <item row="7" column="3">
+         <widget class="Hour" name="WednesdayFifteen">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>83</number>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="4">
+         <widget class="Hour" name="ThursdayFifteen">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>127</number>
+          </property>
+         </widget>
+        </item>
         <item row="7" column="5">
          <widget class="Hour" name="FridayFifteen">
           <property name="mouseTracking">
@@ -991,28 +1027,13 @@
           </property>
          </widget>
         </item>
-        <item row="7" column="3">
-         <widget class="Hour" name="WednesdayFifteen">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
+        <item row="8" column="0">
+         <widget class="QLabel" name="Sixteen">
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>83</number>
+           <string>16:00</string>
           </property>
          </widget>
         </item>
@@ -1041,41 +1062,6 @@
           </property>
          </widget>
         </item>
-        <item row="8" column="3">
-         <widget class="Hour" name="WednesdaySixteen">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>89</number>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="0">
-         <widget class="QLabel" name="Sixteen">
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string>16:00</string>
-          </property>
-         </widget>
-        </item>
         <item row="8" column="2">
          <widget class="Hour" name="TuesdaySixteen">
           <property name="mouseTracking">
@@ -1098,6 +1084,31 @@
           </property>
           <property name="Value" stdset="0">
            <number>53</number>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="Hour" name="WednesdaySixteen">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="Selected" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="Value" stdset="0">
+           <number>89</number>
           </property>
          </widget>
         </item>
@@ -1151,111 +1162,217 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="2">
-         <widget class="Hour" name="TuesdayTen">
-          <property name="mouseTracking">
-           <bool>true</bool>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="Selected" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="Value" stdset="0">
-           <number>29</number>
-          </property>
-         </widget>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="listsVerticleLayout">
+        <item>
+         <layout class="QHBoxLayout" name="list1And2Layout">
+          <item>
+           <layout class="QVBoxLayout" name="list1Layout">
+            <item>
+             <widget class="QLabel" name="ListName1">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>Empty</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="List1">
+              <property name="accessibleDescription">
+               <string>empty</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="list2Layout">
+            <item>
+             <widget class="QLabel" name="ListName2">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>Empty</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="List2">
+              <property name="accessibleDescription">
+               <string>empty</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="list3And4Layout">
+          <item>
+           <layout class="QVBoxLayout" name="list3Layout">
+            <item>
+             <widget class="QLabel" name="ListName3">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>Empty</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="List3">
+              <property name="accessibleDescription">
+               <string>empty</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="list4Layout">
+            <item>
+             <widget class="QLabel" name="ListName4">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>Empty</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="List4">
+              <property name="accessibleDescription">
+               <string>empty</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="list5and6Layout">
+          <item>
+           <layout class="QVBoxLayout" name="List5Layout">
+            <item>
+             <widget class="QLabel" name="ListName5">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>Empty</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="List5">
+              <property name="accessibleDescription">
+               <string>empty</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="list6Layout">
+            <item>
+             <widget class="QLabel" name="ListName6">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>Empty</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="List6">
+              <property name="accessibleDescription">
+               <string>empty</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
         </item>
        </layout>
-      </widget>
-      <widget class="QSplitter" name="splitter_4">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <widget class="QSplitter" name="splitter">
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="sectionToolsLayout">
+      <item>
+       <widget class="QLineEdit" name="AddCourseLine">
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="SelectCourse">
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="duplicatesEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AddCourseButton">
+        <property name="text">
+         <string>Add Course</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DeleteCourse">
+        <property name="text">
+         <string>Delete Course</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AddSection">
+        <property name="text">
+         <string>Add Section</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="doneLayout">
+      <item>
+       <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <widget class="QListWidget" name="List1">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
-        </widget>
-        <widget class="QListWidget" name="List2">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
-        </widget>
-       </widget>
-       <widget class="QSplitter" name="splitter_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>378</width>
+          <height>20</height>
+         </size>
         </property>
-        <widget class="QListWidget" name="List3">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
-        </widget>
-        <widget class="QListWidget" name="List4">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
-        </widget>
-       </widget>
-       <widget class="QSplitter" name="splitter_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Done">
+        <property name="text">
+         <string>Done</string>
         </property>
-        <widget class="QListWidget" name="List5">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
-        </widget>
-        <widget class="QListWidget" name="List6">
-         <property name="accessibleDescription">
-          <string>empty</string>
-         </property>
-        </widget>
        </widget>
-      </widget>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QComboBox" name="SelectCourse">
-      <property name="editable">
-       <bool>false</bool>
-      </property>
-      <property name="duplicatesEnabled">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="6">
-     <widget class="QPushButton" name="AddSection">
-      <property name="text">
-       <string>Add Section</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLineEdit" name="AddCourseLine"/>
-    </item>
-    <item row="3" column="6">
-     <widget class="QPushButton" name="Done">
-      <property name="text">
-       <string>Done</string>
-      </property>
-     </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -1268,8 +1385,20 @@
      <height>17</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>

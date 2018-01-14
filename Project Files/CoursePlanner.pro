@@ -25,12 +25,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    hour.cpp \
-    delayedconverttored.cpp
+    hour.cpp
 
 HEADERS  += mainwindow.h \
-    hour.h \
-    delayedconverttored.h
+    hour.h
 
 FORMS    += mainwindow.ui
 
