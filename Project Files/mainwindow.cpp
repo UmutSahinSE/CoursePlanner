@@ -3,7 +3,6 @@
 #include <QMessageBox>
 #include <QTextStream>
 #include <QFileDialog>
-#include <QLayoutItem>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

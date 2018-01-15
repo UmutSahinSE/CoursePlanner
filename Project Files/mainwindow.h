@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QList>
-#include <QFile>
 #include "hour.h"
 #include "ui_mainwindow.h"
 
