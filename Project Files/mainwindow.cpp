@@ -93,10 +93,11 @@ void MainWindow::InitializeValues()
 
 void MainWindow::SetAllRed()
 {
+    QPalette red;
+    red.setColor(QPalette::Window,Qt::red);
     for(int counter=0;counter<40;counter++)
-    {
-        QPixmap Red(":/RoadEnd.png");
-        Hours[counter]->setPixmap(Red);
+    {      
+        Hours[counter]->setPalette(red);
     }
 }
 
@@ -114,31 +115,34 @@ bool MainWindow::HasSameHour(long int value1, long int value2)
 
 void MainWindow::AddOrDiscardHour(Hour *Referance)
 {
-    QPixmap Red(":/RoadEnd.png");
-    QPixmap Green(":/CarSpawn.png");
+    QPalette red;
+    red.setColor(QPalette::Window,Qt::red);
+    QPalette green;
+    green.setColor(QPalette::Window,Qt::green);
     SetAllRed();
     for(int counter=0;counter<40;counter++)
     {
         if(Hours[counter]->Selected)
-            Hours[counter]->setPixmap(Green);
+            Hours[counter]->setPalette(green);
     }
     if(!Referance->Selected)
     {
         Referance->Selected=true;      
-        Referance->setPixmap(Green);
+        Referance->setPalette(green);
         HoursWillIncluded[Referance->day]*=Referance->Value;
     }
     else
     {
         Referance->Selected=false;    
-        Referance->setPixmap(Red);
+        Referance->setPalette(red);
         HoursWillIncluded[Referance->day]/=Referance->Value;
     }
 }
 
 void MainWindow::Highlight(QListWidgetItem *chosen)
 {
-    QPixmap Green(":/CarSpawn.png");
+    QPalette green;
+    green.setColor(QPalette::Window,Qt::green);
     SetAllRed();
     SetAllUnselected();
     int list;
@@ -154,7 +158,7 @@ void MainWindow::Highlight(QListWidgetItem *chosen)
         {
            if(valuesOnLists[list][counter][chosen->listWidget()->currentRow()]%values[counter2]==0)
            {
-               Hours[counter*8+counter2]->setPixmap(Green);
+               Hours[counter*8+counter2]->setPalette(green);
            }
         }
     }
@@ -162,7 +166,8 @@ void MainWindow::Highlight(QListWidgetItem *chosen)
 
 void MainWindow::HighlightResults(QListWidgetItem *chosen)
 {
-    QPixmap Green(":/CarSpawn.png");
+    QPalette green;
+    green.setColor(QPalette::Window,Qt::green);
     SetAllRed();
     SetAllUnselected();
         for(int counter=0;counter<8;counter++)
@@ -171,14 +176,15 @@ void MainWindow::HighlightResults(QListWidgetItem *chosen)
            {
                if(valuesOnLists[finalList][counter2][chosen->listWidget()->currentRow()]%values[counter]==0)
                {
-                   Hours[counter2*8+counter]->setPixmap(Green);
+                   Hours[counter2*8+counter]->setPalette(green);
                }
            }
         }
 }
 void MainWindow::HighlightFromSaveResults(QListWidgetItem *chosen)
 {
-    QPixmap Green(":/CarSpawn.png");
+    QPalette green;
+    green.setColor(QPalette::Window,Qt::green);
     SetAllRed();
     SetAllUnselected();
         for(int counter=0;counter<8;counter++)
@@ -187,7 +193,7 @@ void MainWindow::HighlightFromSaveResults(QListWidgetItem *chosen)
            {
                if(valuesOnLists[0][counter2][chosen->listWidget()->currentRow()]%values[counter]==0)
                {
-                   Hours[counter2*8+counter]->setPixmap(Green);
+                   Hours[counter2*8+counter]->setPalette(green);
                }
            }
         }
@@ -414,7 +420,7 @@ void MainWindow::on_Done_clicked()
 
 void MainWindow::on_actionOpen_triggered()
 {
-    QString savePath=QFileDialog::getOpenFileName(this,"Choose a Save File",QDir::homePath(),"Text files (*.txt)");
+    QString savePath=QFileDialog::getOpenFileName(this,"Choose a Save File",QDir::homePath(),"Text files (*.txt);;All files(*)");
     if(!savePath.isEmpty()&& !savePath.isNull())
     {
         QFile saveFile(savePath);

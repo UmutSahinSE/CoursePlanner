@@ -1,9 +1,10 @@
 #include "hour.h"
-#include <QPixmap>
 
 Hour::Hour(QWidget *parent) : QLabel(parent)
 {
-
+    QPalette red;
+    red.setColor(QPalette::Window,Qt::red);
+    setPalette(red);
 }
 
 void Hour::mousePressEvent(QMouseEvent *ev)

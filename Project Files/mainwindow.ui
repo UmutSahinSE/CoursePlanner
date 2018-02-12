@@ -97,14 +97,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -122,14 +122,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -147,14 +147,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -172,14 +172,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -197,14 +197,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -232,14 +232,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -257,14 +257,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -282,14 +282,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -307,14 +307,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -332,14 +332,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -367,14 +367,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -392,14 +392,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -417,14 +417,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -442,14 +442,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -467,14 +467,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -502,14 +502,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -527,14 +527,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -552,14 +552,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -577,14 +577,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -602,14 +602,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -637,14 +637,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -662,14 +662,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -687,14 +687,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -712,14 +712,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -737,14 +737,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -772,14 +772,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -797,14 +797,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -822,14 +822,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -847,14 +847,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -872,14 +872,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -907,14 +907,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -932,14 +932,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -957,14 +957,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -982,14 +982,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -1007,14 +1007,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -1042,14 +1042,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -1067,14 +1067,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -1092,14 +1092,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -1117,14 +1117,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -1142,14 +1142,14 @@
           <property name="mouseTracking">
            <bool>true</bool>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
            <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="pictures.qrc">:/RoadEnd.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -1382,7 +1382,7 @@
      <x>0</x>
      <y>0</y>
      <width>711</width>
-     <height>17</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -1408,8 +1408,6 @@
    <header location="global">hour.h</header>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="pictures.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
